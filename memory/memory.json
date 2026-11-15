@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "runs": [
+    {
+      "run_id": "20261115-133042_rag",
+      "topic": "Introduction to RAG (Retrieval-Augmented Generation)",
+      "status": "BLOCKED",
+      "attempts": 3,
+      "injected": null,
+      "finished": "2026-11-15T10:16:55+00:00",
+      "first_attempt_failed": [
+        "key_points"
+      ],
+      "final_failed": [
+        "key_points"
+      ]
+    }
+  ],
+  "check_stats": {
+    "structure": {
+      "evaluated": 3,
+      "failed": 0,
+      "first_attempt_evaluated": 1,
+      "first_attempt_failed": 0
+    },
+    "length": {
+      "evaluated": 3,
+      "failed": 0,
+      "first_attempt_evaluated": 1,
+      "first_attempt_failed": 0
+    },
+    "readability": {
+      "evaluated": 3,
+      "failed": 0,
+      "first_attempt_evaluated": 1,
+      "first_attempt_failed": 0
+    },
+    "sentence_length": {
+      "evaluated": 3,
+      "failed": 0,
+      "first_attempt_evaluated": 1,
+      "first_attempt_failed": 0
+    },
+    "glossary_coverage": {
+      "evaluated": 3,
+      "failed": 0,
+      "first_attempt_evaluated": 1,
+      "first_attempt_failed": 0
+    },
+    "misconception_tripwire": {
+      "evaluated": 3,
+      "failed": 0,
+      "first_attempt_evaluated": 1,
+      "first_attempt_failed": 0
+    },
+    "quiz_format": {
+      "evaluated": 3,
+      "failed": 0,
+      "first_attempt_evaluated": 1,
+      "first_attempt_failed": 0
+    },
+    "accuracy": {
+      "evaluated": 3,
+      "failed": 1,
+      "first_attempt_evaluated": 1,
+      "first_attempt_failed": 0
+    },
+    "key_points": {
+      "evaluated": 3,
+      "failed": 3,
+      "first_attempt_evaluated": 1,
+      "first_attempt_failed": 1
+    },
+    "jargon_explained": {
+      "evaluated": 3,
+      "failed": 1,
+      "first_attempt_evaluated": 1,
+      "first_attempt_failed": 0
+    },
+    "plain_language": {
+      "evaluated": 3,
+      "failed": 2,
+      "first_attempt_evaluated": 1,
+      "first_attempt_failed": 0
+    },
+    "examples": {
+      "evaluated": 3,
+      "failed": 1,
+      "first_attempt_evaluated": 1,
+      "first_attempt_failed": 0
+    },
+    "flow": {
+      "evaluated": 3,
+      "failed": 1,
+      "first_attempt_evaluated": 1,
+      "first_attempt_failed": 0
+    }
+  },
+  "guidance": [
+    {
+      "id": "g1",
+      "rule": "Every key point from the topic specification must be explicitly taught with its own dedicated heading, label, or clear paragraph.",
+      "check_id": "key_points",
+      "source": "auto",
+      "created": "2026-11-15T10:16:58+00:00",
+      "times_reinforced": 1,
+      "applied_runs": 0,
+      "applied_first_pass": 0,
+      "applied_first_fail": 0,
+      "active": true,
+      "flag": null
+    }
+  ],
+  "learned_jargon": {},
+  "calibration": {},
+  "feedback": []
+}

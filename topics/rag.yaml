@@ -1,0 +1,109 @@
+# Human-curated topic spec for "Introduction to RAG".
+# This is the ground truth both the generator and the evaluator are anchored to.
+# The evaluator never grades accuracy against "what the model thinks" - it grades
+# against these facts and misconceptions.
+slug: rag
+title: "Introduction to RAG (Retrieval-Augmented Generation)"
+verified: true          # true = reviewed by a human. Auto-generated specs are false.
+aliases:
+  - rag
+  - retrieval-augmented generation
+  - retrieval augmented generation
+
+learner_profile: >
+  A 12th-grade graduate from India. Studied in a non-English-medium school, so English
+  vocabulary is limited. Has used apps like ChatGPT or Google but has no programming,
+  maths-beyond-school or AI background. Wants to start a career in AI.
+
+# Every key point must be clearly taught. Checked one-by-one by the coverage judge.
+key_points:
+  - id: kp1_llm_limits
+    text: >
+      An LLM (large language model, like ChatGPT) learns from a big amount of text up to
+      a certain date. It does not know your private documents or very new information,
+      and it can confidently make up wrong answers (this is called hallucination).
+  - id: kp2_definition
+    text: >
+      RAG means: before the LLM answers, a separate search step finds relevant
+      information from a chosen knowledge source and gives it to the LLM together with
+      the question, so the answer is based on that information.
+  - id: kp3_name
+    text: >
+      The name explained word by word: Retrieval = finding the useful information;
+      Augmented = adding it to the question (the prompt); Generation = the LLM writes the
+      answer.
+  - id: kp4_prepare
+    text: >
+      Preparation step (done once, before questions): documents are split into small
+      pieces called chunks; each chunk is turned into an embedding (a list of numbers
+      that captures its meaning); the embeddings are stored in a vector database.
+  - id: kp5_answer
+    text: >
+      Question step (every time): the question is also turned into an embedding; the
+      system finds the chunks whose meaning is closest to the question (similarity
+      search); the top few chunks are added to the prompt with the question; the LLM
+      writes the answer using them.
+  - id: kp6_why
+    text: >
+      Why it matters: the LLM can use private and up-to-date information without being
+      retrained; answers are more grounded so hallucinations are reduced; the system can
+      show which sources it used; updating knowledge is as simple as updating documents.
+  - id: kp7_limits
+    text: >
+      Limits: the answer is only as good as what is retrieved. If the search finds wrong
+      or unrelated chunks, or the right information is not in the documents, the answer
+      can still be wrong. RAG reduces hallucinations but does not remove them completely.
+  - id: kp8_uses
+    text: >
+      Real uses: customer-support chatbots that answer from company help pages, asking
+      questions over company or college documents, study helpers that answer from your
+      own notes.
+
+# Facts the accuracy judge uses as reference. Claims that contradict these fail.
+reference_facts:
+  - RAG does not change or retrain the LLM. Its internal settings (weights) stay the same. The extra knowledge is given inside the prompt at the time of the question.
+  - After the answer is given, the LLM does not keep or "remember" the retrieved information. Retrieval happens again for each question.
+  - An embedding is a list of numbers (a vector). Texts with similar meaning get embeddings that are close to each other, even if they use different words.
+  - The retriever is usually a separate component from the LLM. A vector database stores embeddings and finds similar ones; it does not write answers.
+  - Retrieval normally returns only the top few most similar chunks (often around 3 to 5), because the LLM can only read a limited amount of text at once (its context window).
+  - Chunking matters - chunks that are too big waste space in the prompt; chunks that are too small lose meaning.
+  - Retrieval can also be done with keyword search or a mix of keyword and vector search; vector (meaning-based) search is the most common beginner setup.
+  - Fine-tuning is different - it trains the model further and changes its weights. RAG and fine-tuning can be used together.
+  - The term RAG comes from a 2020 research paper by Patrick Lewis and others at Facebook AI Research (now Meta AI).
+  - The knowledge source can be PDFs, web pages, notes, help-centre articles, databases, and so on.
+
+# Misconceptions. Stating any of these as true is an automatic accuracy fail.
+misconceptions:
+  - RAG retrains or fine-tunes the model on your documents.
+  - With RAG the model permanently learns or remembers your documents.
+  - RAG completely removes hallucinations or guarantees correct answers.
+  - In RAG the LLM itself searches the internet on its own.
+  - Embeddings are just keywords, or are encrypted/compressed copies of the text.
+  - The vector database writes or generates the answer.
+  - RAG needs the LLM to be trained from scratch.
+
+# Technical words a beginner will not know. If used, each must be explained in simple
+# words at first use AND appear in the Glossary. (Patterns are case-insensitive regex.)
+jargon:
+  LLM: '\bLLMs?\b|large language models?'
+  AI model: '\bAI models?\b'
+  hallucination: '\bhallucinat\w*'
+  retrieval: '\bretriev\w*'
+  augmented: '\baugment\w*'
+  generation: '\bgeneration\b'
+  prompt: '\bprompts?\b'
+  embedding: '\bembeddings?\b'
+  vector: '\bvectors?\b'
+  vector database: '\bvector (database|db|store)s?\b'
+  chunk: '\bchunks?\b|\bchunking\b'
+  similarity search: '\bsimilarity search\b'
+  knowledge source: '\bknowledge (source|base)s?\b'
+  context window: '\bcontext window\b'
+  fine-tuning: '\bfine-?tun\w*'
+  token: '\btokens?\b'
+  semantic: '\bsemantic\w*'
+  cosine similarity: '\bcosine\b'
+  HNSW: '\bHNSW\b'
+  top-k: '\btop-?k\b'
+  weights: '\bweights\b'
+  index: '\bindex(es|ing)?\b'

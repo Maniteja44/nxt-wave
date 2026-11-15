@@ -1,0 +1,6 @@
+{
+  "verdict": "FAIL",
+  "reason": "The 'What is RAG?' section says RAG retrains the model and removes all hallucinations, but 'Where can it go wrong?' and quiz answer Q4 say the opposite. A learner reading top to bottom gets two contradicting messages.",
+  "evidence": ["Because of this, RAG removes all hallucinations."],
+  "fix": "Remove the contradicting sentences from 'What is RAG?' so the whole lesson gives one consistent message."
+}

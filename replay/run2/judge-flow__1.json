@@ -1,0 +1,6 @@
+{
+  "verdict": "PASS",
+  "reason": "Problem first (LLM limits), then the idea (open-book exam, the three words), then the two stages, then an example that follows those exact steps. No contradictions remain.",
+  "evidence": [],
+  "fix": ""
+}

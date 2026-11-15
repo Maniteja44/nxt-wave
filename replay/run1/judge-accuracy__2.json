@@ -1,0 +1,6 @@
+{
+  "verdict": "PASS",
+  "reason": "All claims match the reference facts. The lesson correctly says RAG does not retrain the LLM, does not keep the information, and reduces but does not remove hallucination. The worked-example facts are fictional college notices used consistently, and all quiz answers are correct.",
+  "evidence": [],
+  "fix": ""
+}

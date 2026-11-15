@@ -1,0 +1,6 @@
+{
+  "verdict": "PASS",
+  "reason": "The open-book exam analogy is familiar to Indian students and is mapped to each step (find the page, keep it next to the question, write from it). The scholarship example shows the chunks, the question, which chunks were retrieved and why, the full prompt, and the answer.",
+  "evidence": [],
+  "fix": ""
+}

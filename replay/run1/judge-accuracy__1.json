@@ -1,0 +1,9 @@
+{
+  "verdict": "FAIL",
+  "reason": "The lesson states two misconceptions as facts: that RAG retrains the model so it permanently learns the documents, and that RAG removes all hallucinations. Both contradict the reference facts, and they also contradict the lesson's own 'Where can it go wrong?' section and quiz answer Q4.",
+  "evidence": [
+    "Here is the secret: RAG retrains the AI model on your documents, so the model permanently learns them.",
+    "Because of this, RAG removes all hallucinations."
+  ],
+  "fix": "Delete both sentences. If you want to address this idea, say the opposite clearly: RAG does not retrain or change the model; the found text is only added to the prompt for that one question; RAG reduces hallucinations but cannot remove them completely."
+}

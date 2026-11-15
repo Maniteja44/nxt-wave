@@ -1,0 +1,18 @@
+{
+  "new_rules": [
+    {
+      "rule": "Never use idioms or figures of speech (e.g. 'under the hood'); say literally what happens.",
+      "check_id": "plain_language"
+    },
+    {
+      "rule": "Do not drop in a technical word as decoration; if a term is used, explain it in that sentence or remove it.",
+      "check_id": "jargon_explained"
+    },
+    {
+      "rule": "Keep every sentence under 20 words; split sentences joined by 'so', 'and' or 'because'.",
+      "check_id": "sentence_length"
+    }
+  ],
+  "reinforce": [],
+  "rewrite": []
+}

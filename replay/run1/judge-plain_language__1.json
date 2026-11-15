@@ -1,0 +1,10 @@
+{
+  "verdict": "FAIL",
+  "reason": "'Under the hood' is an idiom. A learner with limited English will read it literally and be confused. The rest of the language is simple and clear.",
+  "evidence": ["Under the hood, each chunk becomes an embedding using semantic understanding."],
+  "hard_words": [
+    {"word": "under the hood", "simpler": "inside the system"},
+    {"word": "semantic", "simpler": "meaning"}
+  ],
+  "fix": "Replace the sentence with a literal one, e.g. 'A computer program changes each chunk into an embedding.'"
+}

@@ -1,0 +1,27 @@
+{
+  "verdict": "FAIL",
+  "terms": [
+    {"term": "LLM", "explained_at_first_use": true},
+    {"term": "hallucination", "explained_at_first_use": true},
+    {"term": "retrieval", "explained_at_first_use": true},
+    {"term": "augmented", "explained_at_first_use": true},
+    {"term": "generation", "explained_at_first_use": true},
+    {"term": "prompt", "explained_at_first_use": true},
+    {"term": "knowledge source", "explained_at_first_use": true},
+    {"term": "chunk", "explained_at_first_use": true},
+    {"term": "embedding", "explained_at_first_use": true},
+    {"term": "semantic", "explained_at_first_use": false},
+    {"term": "vector", "explained_at_first_use": true},
+    {"term": "vector database", "explained_at_first_use": true},
+    {"term": "similarity search", "explained_at_first_use": true},
+    {"term": "index", "explained_at_first_use": true},
+    {"term": "AI model", "explained_at_first_use": false}
+  ],
+  "unexplained_other_words": [],
+  "reason": "'semantic' is never explained, and 'AI model' appears suddenly in the 'What is RAG?' section without being linked to the LLM the learner already knows.",
+  "evidence": [
+    "Under the hood, each chunk becomes an embedding using semantic understanding.",
+    "Here is the secret: RAG retrains the AI model on your documents, so the model permanently learns them."
+  ],
+  "fix": "Remove the word 'semantic' (the next sentence already explains that embeddings capture meaning). Use 'LLM' consistently instead of introducing 'AI model'."
+}

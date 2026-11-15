@@ -1,0 +1,61 @@
+{
+  "verdict": "PASS",
+  "terms": [
+    {
+      "term": "LLM",
+      "explained_at_first_use": true
+    },
+    {
+      "term": "hallucination",
+      "explained_at_first_use": true
+    },
+    {
+      "term": "retrieval",
+      "explained_at_first_use": true
+    },
+    {
+      "term": "augmented",
+      "explained_at_first_use": true
+    },
+    {
+      "term": "generation",
+      "explained_at_first_use": true
+    },
+    {
+      "term": "prompt",
+      "explained_at_first_use": true
+    },
+    {
+      "term": "knowledge source",
+      "explained_at_first_use": true
+    },
+    {
+      "term": "chunk",
+      "explained_at_first_use": true
+    },
+    {
+      "term": "embedding",
+      "explained_at_first_use": true
+    },
+    {
+      "term": "vector",
+      "explained_at_first_use": true
+    },
+    {
+      "term": "vector database",
+      "explained_at_first_use": true
+    },
+    {
+      "term": "similarity search",
+      "explained_at_first_use": true
+    },
+    {
+      "term": "index",
+      "explained_at_first_use": true
+    }
+  ],
+  "unexplained_other_words": [],
+  "reason": "Every technical term is explained in simple words where it first appears.",
+  "evidence": [],
+  "fix": ""
+}

@@ -1,0 +1,33 @@
+{
+  "short_name": "RAG",
+  "main_analogy": "An open-book exam. In a closed-book exam a student must answer from memory and may guess; in an open-book exam the student first finds the right page in the textbook (retrieval), keeps that page next to the question (augmented), and then writes the answer from it (generation). The textbook = the knowledge source; finding the page = retrieval; the student = the LLM.",
+  "worked_example": {
+    "scenario": "Meena, a first-year student, asks her college's help chatbot about the merit scholarship. The chatbot uses RAG over the college notices.",
+    "documents": [
+      "Chunk A: Applications for the merit scholarship close on 31 August.",
+      "Chunk B: To apply for the merit scholarship, you need at least 75% marks in Class 12.",
+      "Chunk C: The hostel fee must be paid by 15 July."
+    ],
+    "question": "What marks do I need for the merit scholarship, and what is the last date to apply?",
+    "retrieved": ["Chunk B", "Chunk A"],
+    "answer": "You need at least 75% marks in Class 12. The last date to apply is 31 August."
+  },
+  "sections": [
+    {"heading": "## What you will learn", "key_points": [], "bullets": ["Promise: what RAG is, why it is used, how it works", "No coding or maths needed"]},
+    {"heading": "## Why does this matter?", "key_points": ["kp1_llm_limits"], "bullets": ["LLM = large language model, like ChatGPT", "Learned up to a date; does not know private or new information", "Hallucination: sure-sounding wrong answer", "Closed-book exam comparison"]},
+    {"heading": "## What is RAG?", "key_points": ["kp2_definition", "kp3_name"], "bullets": ["Open-book exam analogy", "Meaning of Retrieval, Augmented, Generation", "Search is a separate part, not the LLM itself"]},
+    {"heading": "## How does it work?", "key_points": ["kp4_prepare", "kp5_answer"], "bullets": ["Stage 1 preparation: chunks, embeddings, vector database", "Stage 2 each question: question embedding, similarity search, top chunks into prompt, LLM writes answer", "Map back to the open-book exam"]},
+    {"heading": "## A full example, step by step", "key_points": ["kp5_answer"], "bullets": ["Meena's scholarship question, chunks A-C, retrieval picks B and A, prompt shown, answer shown"]},
+    {"heading": "## Where can it go wrong?", "key_points": ["kp7_limits", "kp6_why"], "bullets": ["Wrong chunks, missing information, chunk size", "Reduces but does not remove hallucination", "Does not retrain; does not remember"]},
+    {"heading": "## Key takeaways", "key_points": ["kp6_why", "kp8_uses"], "bullets": ["Summary bullets", "Real uses: help chatbots, document Q&A, study helpers", "Update knowledge by updating documents"]},
+    {"heading": "## Glossary", "key_points": [], "bullets": ["All terms used"]},
+    {"heading": "## Check your understanding", "key_points": [], "bullets": ["4 questions with answers"]}
+  ],
+  "glossary_terms": ["LLM", "hallucination", "RAG", "retrieval", "augmented", "generation", "knowledge source", "prompt", "chunk", "embedding", "vector", "vector database", "similarity search", "index"],
+  "quiz": [
+    {"q": "Why can an LLM give a wrong answer about your college rules?", "a": "It never saw them during training, so it may guess."},
+    {"q": "What do the three words in RAG mean?", "a": "Retrieval = finding, Augmented = adding to the question, Generation = writing the answer."},
+    {"q": "What is an embedding?", "a": "A list of numbers that shows the meaning of a text."},
+    {"q": "Does RAG retrain the LLM?", "a": "No. It only adds information to the prompt."}
+  ]
+}

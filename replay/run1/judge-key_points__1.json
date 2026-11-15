@@ -1,0 +1,16 @@
+{
+  "verdict": "PASS",
+  "points": [
+    {"id": "kp1_llm_limits", "covered": true, "quote": "Hallucination means the AI makes up an answer that is not true."},
+    {"id": "kp2_definition", "covered": true, "quote": "In simple words, RAG means: first find the right information, then add it to the question, then let the LLM write the answer."},
+    {"id": "kp3_name", "covered": true, "quote": "Augmented means \"added to\". The system adds the found information to your question."},
+    {"id": "kp4_prepare", "covered": true, "quote": "All the embeddings are saved in a vector database."},
+    {"id": "kp5_answer", "covered": true, "quote": "The system puts the best chunks and your question together in one prompt."},
+    {"id": "kp6_why", "covered": true, "quote": "To change what the system knows, you only change the documents. You do not need to train the LLM again."},
+    {"id": "kp7_limits", "covered": true, "quote": "So RAG reduces hallucination, but it does not remove it completely."},
+    {"id": "kp8_uses", "covered": true, "quote": "RAG is used in company help chatbots, in tools that answer questions from office or college documents, and in study helpers that answer from your own notes."}
+  ],
+  "reason": "All 8 key points are taught with clear sentences.",
+  "evidence": [],
+  "fix": ""
+}
